@@ -1,43 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-.MovieCards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
-.MovieCard {
-    background-color: #FBFCD4;
-    margin: 50px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    border-radius: 10px;
-    height: 50%;
-    width: 50%;
-}
+
+
 
 h2 {
-    font-size: 30px;
+    font-size: 2em;
     text-align: center;
+    color: #FBC403;
+    margin: auto;
 }
 
 img {
     border-radius: 8px;
+    margin: auto;
     width: 50%;
+    margin: auto;
+    
 }
 
-.Card-Info {
-    font-size: 18px;
-    padding: 12px;
-    margin: 28px;
-    font-family: 'Poppins', sans-serif;
-    text-align: start;
-}
+
 
 .Vote-Average {
     margin: 20px;
     text-align: center;
+    color: white;
+    font-weight: 900;
+    width: 50%;
+    margin: auto;
 }
+.Movie-Overview{
+    color: white;
+    font-weight: 900;
+    margin: auto;
+    width: 50%;
+}
+
+
+.movieList{
+    display: flex;
+    flex-flow: column wrap;
+    grid-template-columns: 1fr;
+    flex-wrap: wrap;
+    margin: auto;
+}
+

@@ -22,6 +22,8 @@ body {
     justify-content: center;
     padding: 10px;
     text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }
 
 #home-link a{

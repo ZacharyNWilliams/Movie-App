@@ -44,7 +44,7 @@ export function SearchForm(props: ISearchFormProps) {
         <input
           type="text"
           name="searchBarInput"
-          placeholder="Search movie here"
+          placeholder="Search"
           id="searchBarInput"
           onChange={(e) => setMovieLists(e.target.value)}
         />

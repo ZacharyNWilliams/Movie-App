@@ -24,7 +24,7 @@ export function MovieList() {
     <div className="MovieList" onSubmit={(e) => onSubmit(e)}>
       <SearchForm UpdateMovies={UpdateMovies} />
 
-      <ul>
+      <ul className="">
         {movieLists.map((movie) => (
           <MovieCard key={movie.id} MovieResult={movie} />
         ))}
@@ -32,3 +32,25 @@ export function MovieList() {
     </div>
   );
 }
+{/* <Row xs={1} md={2} className="g-4">
+{Array.from({ length: 1 }).map((_, idx) => (
+  <Col>
+    <Card>
+      <Card.Img variant="top"src={`https://image.tmdb.org/t/p/w500/${props.MovieResult.poster_path}`}
+                alt={props.MovieResult.title} />
+      <Card.Body>
+      
+        <Card.Title><h2 className="">{props.MovieResult.title}</h2></Card.Title>
+        <Card.Text>
+        <div className="Vote-Average"> {props.MovieResult.vote_average.toFixed(1)}</div>
+        </Card.Text>
+        <Card.Text>
+        <p className="Movie-Overview">{props.MovieResult.overview}</p>
+        <button onClick={() => addResult(MovieResult)}>Add</button>
+       <button onClick={() => removeResult(MovieResult.id)}>Remove</button>
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </Col>
+))}
+</Row> */}
